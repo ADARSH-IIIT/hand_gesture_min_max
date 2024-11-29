@@ -19,4 +19,7 @@ actual_width=$(echo "$window_info" | awk '/Width:/ {print $2}')
 mid_x=$(( x_pos + (actual_width / 2) ))
 
 xdotool mousemove $mid_x $((y_pos - 30)) click 2
+
+xdotool mousemove 960 540
+
 xdotool windowminimize "$window_id"
